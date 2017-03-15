@@ -1,0 +1,10 @@
+<h3> Animals </h3>
+
+<section [ngClass]="{ black: isBlackBg, yellow: isYellowText, big: isLarge }">
+  <div *ngFor="let oneAnimal of animals; let x = index">
+    <h4> {{ oneAnimal.name }} </h4>
+
+    <p> {{ oneAnimal.category }} </p>
+    <p> {{ oneAnimal.id }} (order {{ x }})</p>
+  </div>
+</section>

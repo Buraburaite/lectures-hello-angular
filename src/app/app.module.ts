@@ -10,6 +10,7 @@ import { MyEventBindingComponent } from './my-event-binding/my-event-binding.com
 import { MyMixedBindingComponent } from './my-mixed-binding/my-mixed-binding.component';
 import { BuiltInPipesComponent } from './built-in-pipes/built-in-pipes.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { AnimalsComponent } from './animals/animals.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
     MyEventBindingComponent,
     MyMixedBindingComponent,
     BuiltInPipesComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    AnimalsComponent
   ],
   imports: [
     BrowserModule,
