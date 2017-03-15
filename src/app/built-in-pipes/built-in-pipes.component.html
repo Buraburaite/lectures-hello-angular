@@ -6,3 +6,7 @@
 <p> Pretty Date: {{ myDate | date: 'EEEE, MMMM d, yyyy' }} </p>
 
 <button (click)="increment()">Flash-forward</button>
+
+<h4> What's your name? </h4>
+<input [(ngModel)]="yourName" type="text" placeholder="Izzy Ironside">
+<p> Hello, {{ yourName | capitalize }}. </p>
