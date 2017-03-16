@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyPropertyBindingComponent implements OnInit {
 
-  myImageSource : string = "https://media.giphy.com/media/yYuTnuQzulqIo/giphy.gif";
+  myImageSource : string = "https://media.giphy.com/media/l1BgRcqhIyDSke5pe/source.gif";
   images : Array<string> = [
+    "https://media.giphy.com/media/l1BgRcqhIyDSke5pe/source.gif",
     "https://media.giphy.com/media/yYuTnuQzulqIo/giphy.gif",
     "https://media.giphy.com/media/zNXvBiNNcrjDW/giphy.gif",
     "https://media.giphy.com/media/xNBcChLQt7s9a/200.gif",

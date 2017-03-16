@@ -1,0 +1,38 @@
+<h3> Sign Up </h3>
+
+<form (ngSubmit)="submitMyForm(myForm)" #myForm="ngForm">
+  <p>
+    Username
+    <input #myUsername="ngModel" [(ngModel)]="username"
+    type="text" name="username"
+    required>
+  </p>
+
+  <div *ngIf="myUsername.errors && myUsername.dirty">
+    <p class="error" [hidden]="!myUsername.errors.required">
+      Please provide a username
+    </p>
+  </div>
+
+  <p>
+    Password
+    <input #myPassword="ngModel" [(ngModel)]="password"
+    type="password" name="password"
+    required minlength="8">
+  </p>
+
+  <div *ngIf="myPassword.errors && myPassword.dirty">
+    <p class="error" [hidden]="!myPassword.errors.required">
+      Please provide a password
+    </p>
+  </div>
+
+  <div *ngIf="myPassword.errors && myPassword.dirty">
+    <p class="error" [hidden]="!myPassword.errors.minlength">
+      Your password needs to be at least 8 characters
+    </p>
+  </div>
+
+
+  <button> Sign up </button>
+</form>

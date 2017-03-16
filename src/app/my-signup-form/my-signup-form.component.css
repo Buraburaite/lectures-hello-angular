@@ -1,0 +1,9 @@
+.error {
+  color: red;
+}
+.ng-touched.ng-invalid {
+  outline-color: red;
+}
+.ng-touched.ng-valid {
+  outline-color: green;
+}
